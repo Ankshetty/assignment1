@@ -10,7 +10,14 @@ function myFunction() {
 
   function openTab(id) 
   {    
-    var tabcontent;  
-    tabcontent = document.getElementById(id).innerHTML;
-    document.getElementById("tabDisplay").innerHTML=tabcontent ;
+    var tabcontent1,tabcontent2,tabcontent;  
+    // tabcontent = document.getElementById(id).innerHTML;
+
+
+    tabcontent1 = document.getElementById(id).firstElementChild.innerHTML;
+    tabcontent2 = document.getElementById(id).lastElementChild.innerHTML;
+
+    document.getElementById("tabcontent__heading").innerHTML=tabcontent1 ;
+
+ document.getElementById("tabcontent__content").innerHTML=tabcontent2 ;
   }

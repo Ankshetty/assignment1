@@ -15,31 +15,32 @@
 
     <header>
 
-    </header>
-
     <nav class="nav-container">
         
-        <img src="images/logo.svg" alt="logo" class="logo"/>
-
-        <div class="nav-container_div" id="nav-div">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i></a>
-            <ul class="nav-container_ul">
-                
-                <li><a href="#" class="navbar"><i class="fa fa-search" aria-hidden="true"></i>  FIND YOUR HOME</a></li>
-                <li><a href="#" class="navbar">FLOOR PLANS</a></li>
-                <li><a href="#" class="navbar">NEWS</a></li>
-                <li><a href="#" class="navbar">RESOURCES</a></li>
-                <li><a href="#" class="navbar">ABOUT US</a></li>
-                <li><a href="#" class="navbar">CONTACT US</a></li>
-                <li><button class="call-button"><i class="fa fa-phone" aria-hidden="true"></i>  844-766-HOME(4663)</button></li>
-               
-
-            </ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-        </div>
+            <img src="images/logo.svg" alt="logo" class="logo"/>
     
-    </nav>
+            <div class="nav-container_div" id="nav-div">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i></a>
+                <ul class="nav-container_ul">
+                    
+                    <li><a href="#" class="navbar"><i class="fa fa-search" aria-hidden="true"></i>  FIND YOUR HOME</a></li>
+                    <li><a href="#" class="navbar">FLOOR PLANS</a></li>
+                    <li><a href="#" class="navbar">NEWS</a></li>
+                    <li><a href="#" class="navbar">RESOURCES</a></li>
+                    <li><a href="#" class="navbar">ABOUT US</a></li>
+                    <li><a href="#" class="navbar">CONTACT US</a></li>
+                    <li><button class="call-button"><i class="fa fa-phone" aria-hidden="true"></i>  844-766-HOME(4663)</button></li>
+                   
+    
+                </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+            </div>
+        
+        </nav>
+
+    </header>
+
 
     
 
@@ -89,7 +90,7 @@
 
         <div class="main-content2">
             <div class="main-content2-div1 tab">
-                <div class="sub-div1 tablinks" id="tab1" onclick="openTab(this.id)">
+                <div class="sub-div1 tablinks" id="tab1" tabindex="0" onclick="openTab(this.id)" onfocus="openTab(this.id)">
                     <h3>
                         2018
                     </h3>
@@ -98,7 +99,7 @@
                         diam nonumy eirmod
                     </p>
                 </div>
-                <div class="sub-div2 tablinks" id="tab2" onclick="openTab(this.id)">
+                <div class="sub-div2 tablinks" id="tab2" tabindex="0" onclick="openTab(this.id)" onfocus="openTab(this.id)">
                     <h3>
                         WINNER!
                     </h3>
@@ -106,7 +107,7 @@
                         Lorem ipsum dolor sit amet, conseteur sadipscing slitr, sed diam nonumy eirmod             
                     </p>
                 </div>
-                <div class="sub-div3 tablinks" id="tab3" onclick="openTab(this.id)">
+                <div class="sub-div3 tablinks" id="tab3" tabindex="0" onclick="openTab(this.id)" onfocus="openTab(this.id)">
                     <h3>
                         GREEN TAG SALE
                     </h3>
@@ -121,9 +122,9 @@
             
             <div class="main-content2-div2 tabcontent" id="tabDisplay" >
 
-                <h2>South Carolina's 2018 Best 
+                <h2 id="tabcontent__heading">South Carolina's 2018 Best 
                     <br>Home Builder!</h2>
-                <p class="contents">Lorem ipsum door sit amet,conseteur sadipscing elitr, sed
+                <p class="contents"  id="tabcontent__content">Lorem ipsum door sit amet,conseteur sadipscing elitr, sed
                         diam nonumy eirmod tempor invidunt ut labore et dolore magma aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
                 </p>
 
