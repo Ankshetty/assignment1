@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+            <title>Form Page</title>
+            <meta charset="utf-8">
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           
+            <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="styles.css">
+            <script src="js/mainjs.js"></script>
+
+    </head>
+    <body>
+            <div class="form-container">
+                    <form action="thanku.html" class="form-container__form">
+
+                        <div class="form-container__div">
+                                <label id="floatContainer1" class="float-container__label">First Name</label>
+                                <input type="text" id="floatField1" required onclick="f1(this.id,'floatContainer1')" onfocus="f1(this.id,'floatContainer1')" oninput="f2(this.id,'floatContainer1')">
+
+                        </div>
+                        <div  class="form-container__div">
+                                <label id="floatContainer2" class="float-container__label">Last Name</label>
+                                <input type="text" id="floatField2" required onclick="f1(this.id,'floatContainer2')" onfocus="f1(this.id,'floatContainer2')" oninput="f2(this.id,'floatContainer2')">
+                        </div>
+                       <div class="form-container__div">
+                            <label id="floatContainer3" class="float-container__label">Email</label>
+                            <input type="email" id="floatField3" required onclick="f1(this.id,'floatContainer3')" onfocus="f1(this.id,'floatContainer3')" oninput="f2(this.id,'floatContainer3')">
+                       </div>
+                       <div class="form-container__div">
+                            <label id="floatContainer4" class="float-container__label">Company</label>
+                            <input type="text" id="floatField4" required onclick="f1(this.id,'floatContainer4')" onfocus="f1(this.id,'floatContainer4')" oninput="f2(this.id,'floatContainer4')">
+                       </div>
+                      <div class="form-container__div">
+                            <!-- <label>Industry</label> -->
+                            <select required >
+                                    <option value="I1">INDUSTRY 1</option>
+                                    <option value="I2">INDUSTRY 2</option>
+                                    <option value="I3">INDUSTRY 3</option>
+                                    <option value="I4">INDUSTRY 4</option>
+                            </select>
+
+                            
+
+
+
+                      </div>
+                        <div class="form-container__div">
+                                <!-- <label>Job Function</label> -->
+                                <select>
+                                        <option value="F1">FUNCTION 1</option>
+                                        <option value="F2">FUNCTION 2</option>
+                                        <option value="F3">FUNCTION 3</option>
+                                        <option value="F4">FUNCTION 4</option>
+                                      </select>
+                        </div>
+                       
+                      <div class="form-container__div">
+                            <label id="floatContainer5" class="float-container__label">Phone</label>
+                            <input type="tel" id="floatField5" required onclick="f1(this.id,'floatContainer5')" onfocus="f1(this.id,'floatContainer5')" oninput="f2(this.id,'floatContainer5')">
+                      </div>
+                        <div class="form-container__div">
+                                <label id="floatContainer6" class="float-container__label">Country</label>
+                                <input type="text" id="floatField6" required onclick="f1(this.id,'floatContainer6')" onfocus="f1(this.id,'floatContainer6')" oninput="f2(this.id,'floatContainer6')">
+                        </div>
+                       <div class="form-container__div" style="display: flex;">
+                            
+                            <input type="checkbox" style="width: inherit;text-align: center;">I agree
+
+                       </div>
+                        <div class="form-container__div">
+                                <input type="submit">
+                        </div>
+                      
+                    </form>
+                </div>
+    </body>
+    
+
+
+
+</html>
+
+
+
+
