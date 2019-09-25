@@ -485,13 +485,16 @@ a:focus .fa-facebook,a:focus .fa-twitter,a:focus .fa-instagram{
 
   .float-container__label.active {
     transform: translate(0, 4px) scale(.75);
+    color: #979595d3;
   }
 
   .float-container__label.ok {
     transform: translate(0, 4px) scale(.75);
+    color: #979595d3;
   }
   label:hover,input:hover ~ label{
     transform: translate(0, 4px) scale(.75);
+    color: #979595d3;
   }
   .form-container{
     align-items: center;
@@ -517,3 +520,19 @@ margin-left: 33%;
      box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
     }
 
+/* .tq-container{ */
+    /* background-image: url("images/tq1.jpg"); */
+/* background-repeat: no-repeat;
+
+
+
+
+}
+.tq-container img{
+    object-fit:  cover;
+    width: 100%;
+    height: auto;
+} */
+.tq-container{
+    text-align: center;
+}
