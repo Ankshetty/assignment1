@@ -13,11 +13,12 @@
 </head>
 <body>
 
-    <header>
-
-    <nav class="nav-container">
+    <header class="header">
         
-            <img src="images/logo.svg" alt="logo" class="logo"/>
+   
+    <nav class="nav-container" role="navigation">
+        <a href="#"><img src="images/logo.svg" alt="logo" class="logo"/></a>
+            
     
             <div class="nav-container_div" id="nav-div">
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -25,9 +26,34 @@
                 <ul class="nav-container_ul">
                     
                     <li><a href="#" class="navbar"><i class="fa fa-search" aria-hidden="true"></i>  FIND YOUR HOME</a></li>
-                    <li><a href="#" class="navbar">FLOOR PLANS</a></li>
-                    <li><a href="#" class="navbar">NEWS</a></li>
-                    <li><a href="#" class="navbar">RESOURCES</a></li>
+                    <li><a href="#" class="navbar">FLOOR PLANS > </a>
+
+                        
+                        <ul class="dropdown" aria-label="submenu">
+                            <li><a href="#" class="navbar">PLAN 1</a></li>
+                            <li><a href="#" class="navbar">PLAN 2</a></li>
+                            <li><a href="#" class="navbar">PLAN 3</a></li>
+                        </ul>
+                    
+                    </li>
+                    <li><a href="#" class="navbar">NEWS ></a>
+                    <ul class="dropdown" aria-label="submenu">
+                        <li><a href="#" class="navbar">NEWS 1</a></li>
+                        <li><a href="#" class="navbar">NEWS 2</a></li>
+
+                        <li><a href="#" class="navbar">NEWS 3</a></li>
+                    </ul>
+                
+                     </li>
+
+                    <li><a href="#" class="navbar">RESOURCES ></a>
+                    <ul class="dropdown" aria-label="submenu">
+                        <li><a href="#" class="navbar">RESOURCES1</a></li>
+                        <li><a href="#" class="navbar">RESOURCES2</a></li>
+
+                        <li><a href="#" class="navbar">RESOURCES3</a></li>
+                    </ul>
+                </li>
                     <li><a href="#" class="navbar">ABOUT US</a></li>
                     <li><a href="#" class="navbar">CONTACT US</a></li>
                     <li><button class="call-button"><i class="fa fa-phone" aria-hidden="true"></i>  844-766-HOME(4663)</button></li>
@@ -90,7 +116,7 @@
 
         <div class="main-content2">
             <div class="main-content2-div1 tab">
-                <div class="sub-div1 tablinks" id="tab1" tabindex="0" onclick="openTab(this.id)" onfocus="openTab(this.id)">
+                <div class="sub-div1 tablinks" id="tab1" tabindex="0" onclick="openTab(this.id)" onkeypress="openTab(this.id)">
                     <h3>
                         2018
                     </h3>
@@ -99,7 +125,7 @@
                         diam nonumy eirmod
                     </p>
                 </div>
-                <div class="sub-div2 tablinks" id="tab2" tabindex="0" onclick="openTab(this.id)" onfocus="openTab(this.id)">
+                <div class="sub-div2 tablinks" id="tab2" tabindex="0" onclick="openTab(this.id)" onkeypress="openTab(this.id)">
                     <h3>
                         WINNER!
                     </h3>
@@ -107,7 +133,7 @@
                         Lorem ipsum dolor sit amet, conseteur sadipscing slitr, sed diam nonumy eirmod             
                     </p>
                 </div>
-                <div class="sub-div3 tablinks" id="tab3" tabindex="0" onclick="openTab(this.id)" onfocus="openTab(this.id)">
+                <div class="sub-div3 tablinks" id="tab3" tabindex="0" onclick="openTab(this.id)" onkeypress="openTab(this.id)">
                     <h3>
                         GREEN TAG SALE
                     </h3>
@@ -172,7 +198,7 @@
 
         </div>
         <div class="footer-div-middle">
-            <ul>
+            <ul class="nav-container_ul">
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">F.A.Q</a></li>
                 <li><a href="#">legal Terms</a></li>
@@ -182,7 +208,7 @@
         </div>
         <div class="footer-div-right">
             <p>FOLLOW US</p>
-            <ul>
+            <ul class="nav-container_ul">
                 <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
                     <!-- <img src="images/facebook-icon.svg"> -->
                 </a></li>
