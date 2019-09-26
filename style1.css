@@ -1,7 +1,7 @@
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
-    outline: none;
+    /* outline: none; */
     
     
 }
@@ -467,7 +467,7 @@ a:focus .fa-facebook,a:focus .fa-twitter,a:focus .fa-instagram{
     border-bottom: 1px solid black;
     background-color: white;
     font-size: 16px;
-    outline: 0;
+    /* outline: 0; */
     padding: 16px 0 10px;
     width: 100%;
     
@@ -518,7 +518,7 @@ margin-right: 30px;
   } */
   .form-container__div__subdiv:hover .float-container__label,.float-container__input:valid + .float-container__label,.float-container__input:focus + .float-container__label{
     transform: translate(0, 4px) scale(.75);
-    color: #979595d3;
+    color: #363535d3;
   }
   .form-container{
     align-items: center;
@@ -526,7 +526,7 @@ margin-right: 30px;
  
     }
    
-    .form-container__div__subdiv:hover .float-container__input,.float-container__input:focus{
+    .form-container__div__subdiv:hover .float-container__input{
       border:1px solid #C8122E;
     }
 
