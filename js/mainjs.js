@@ -22,33 +22,25 @@ function myFunction() {
  document.getElementById("tabcontent__content").innerHTML=tabcontent2 ;
   }
 
+
 function f1(id1,id2){
   const floatField = document.getElementById(id1);
   const floatContainer = document.getElementById(id2);
-  floatField.addEventListener('focus', () => {
-    floatContainer.classList.add('active');
-
-  });
-  
-  floatField.addEventListener('blur', () => {
-  
-      floatContainer.classList.remove('active');
-
-  });
-}
-function f2(id1,id2){
-  const floatField = document.getElementById(id1);
-  const floatContainer = document.getElementById(id2);
-  floatField.addEventListener('input', () => {
+ 
     const value = floatField.value.trim();
     if (value)
+
     {
-      floatContainer.classList.add('ok');
+      floatContainer.className = 'float-container__label';
+      floatContainer.className += ' ok';
     }
     else{
-      floatContainer.classList.remove('ok');
+     
+        floatContainer.className = 'float-container__label';
+    
+    }
     }
 
-  });
-}
+ 
+
 

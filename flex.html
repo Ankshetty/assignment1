@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex layout</title>
+    <style>
+        .container-1,.container-2, .container-3,.container-4{
+            display: flex;
+         flex-wrap: wrap;
+
+            background-color: rgba(121, 2, 2, 0.795);
+            padding: 10px;
+        }
+   
+        .container-1 > div ,.container-2 > div ,.container-3 > div ,.container-4 > div 
+        {
+            background-color: rgba(255, 255, 255, 0.719);
+            text-align: center;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+        
+.container-3__item1__right > div{
+    background-color: rgba(255, 255, 255, 0.719);
+            text-align: center;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+}
+.container-2{
+    line-height: 50px;
+    
+}
+.container-4{
+    line-height: 100px;
+    
+}
+
+        .container-2{
+            justify-content: space-around;
+            
+        }
+        .container-2__item1,.container-2__item2,.container-2__item3
+        {
+width: 200px;
+        }
+        .container-1__item1{
+                flex-basis: 100%;
+        }
+        .container-1__item2{
+            line-height: 300px;
+            flex-grow: 2;
+        }
+        .container-1__item3{
+        flex-grow: 1;
+        line-height: 100px;
+        }
+        .container-3__item1{
+            flex-grow: 1;
+        }
+        .container-3__item2{
+            flex-grow: 1;
+        }
+        .container-3__item3{
+           flex-grow: 1;
+        }
+        .container-3__item4{
+            flex-basis: 100%;
+        }
+        .container-4__item1,.container-4__item2,.container-4__item3,.container-4__item4
+        {
+            flex-grow: 1;
+
+        }
+        .container-3__item1__right{
+            display: flex;
+         flex-wrap: wrap;
+         flex-grow: 1;
+         background-color: rgba(121, 2, 2, 0.795);
+            padding: 10px;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <header class="header" role="banner">
+            <div class="container-1">
+                    <div class="container-1__item1">HEADER</div>
+                    <div class="container-1__item2">CONTENT</div>
+                    <div class="container-1__item3">SIDE BAR</div>
+            </div>
+    </header>
+    <section class="headlines" role="contentinfo"> 
+            <div class="container-2">
+                    <div class="container-2__item1">H1</div>
+                    <div class="container-2__item2">H2</div>
+                    <div class="container-2__item3">H3</div>
+                </div>
+    </section>
+    <section class="featured-contents" role="contentinfo">
+            <div class="container-3">
+                    <div class="container-3__item1">Featured Story</div>
+                    <div class="container-3__item1__right">
+                            <div class="container-3__item2">C1</div>
+                            <div class="container-3__item3">C2</div>
+                            <div class="container-3__item4">C3</div>
+                    </div>
+                   
+                </div>
+    </section>
+    <footer class="footer" role="contentinfo">
+            <div class="container-4">
+                    <div class="container-4__item1">F1</div>
+                    <div class="container-4__item2">F2</div>
+                    <div class="container-4__item3">F3</div>
+                    <div class="container-4__item4">F4</div>
+            </div>
+
+    </footer>
+   
+
+</body>
+</html>
